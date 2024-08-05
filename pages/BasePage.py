@@ -55,7 +55,8 @@ class BasePage:
             locatorType = locatorType.lower()
             element = self.waitForElement(locatorValue, locatorType)
             element.is_displayed()
+            self.log.info(f"Element with locator type: {locatorType} and locatorValue: {locatorValue} is displayed")
             return True
         except:
-            print("print element not displayed")
+            self.log.info(f"Element with locator type: {locatorType} and locatorValue: {locatorValue} could not be displayed displayed")
             return False

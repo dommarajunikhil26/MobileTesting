@@ -3,7 +3,7 @@ import unittest
 import utils.CustomLogger as cl
 from pages.EnterSomeValuePage import EnterValue
 
-@pytest.mark.usefixtures("beforeClass", "beforeMethod")
+@pytest.mark.usefixtures("setUpClass", "setUpMethod")
 class TestEnterSomeValuePage(unittest.TestCase):
 
     @pytest.fixture(autouse=True)

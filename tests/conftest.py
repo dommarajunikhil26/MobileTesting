@@ -4,7 +4,7 @@ import pytest
 from utils.driver import Driver
 
 @pytest.fixture(scope='class')
-def beforeClass(request):
+def setUpClass(request):
     driver = Driver().get_driver()
     if request.cls is not None:
         request.cls.driver = driver
@@ -13,7 +13,7 @@ def beforeClass(request):
     driver.quit()
 
 @pytest.fixture()
-def beforeMethod():
+def setUpMethod():
     print("Before Method")
     yield
     print("After Method")

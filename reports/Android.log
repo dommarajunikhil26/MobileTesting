@@ -113,3 +113,24 @@ io.appium.uiautomator2.common.exceptions.UiSelectorSyntaxException: Could not pa
 05/08/24 12:21:00 PM Monday - BasePage - INFO : Clicked on the element with LocatorType: id and locatorValue: com.code2lead.kwad:id/EnterValue
 05/08/24 12:21:02 PM Monday - BasePage - INFO : Sent keys to the element with LocatorType: classname and locatorValue: android.widget.EditText
 05/08/24 12:21:03 PM Monday - BasePage - INFO : Clicked on the element with LocatorType: text and locatorValue: SUBMIT
+05/08/24 12:51:31 PM Monday - BasePage - INFO : Clicked on the element with LocatorType: id and locatorValue: com.code2lead.kwad:id/EnterValue
+05/08/24 12:51:32 PM Monday - BasePage - INFO : Sent keys to the element with LocatorType: classname and locatorValue: android.widget.EditText
+05/08/24 12:51:33 PM Monday - BasePage - INFO : Clicked on the element with LocatorType: text and locatorValue: SUBMIT
+05/08/24 12:54:57 PM Monday - BasePage - INFO : Clicked on the element with LocatorType: id and locatorValue: com.code2lead.kwad:id/EnterValue
+05/08/24 12:54:58 PM Monday - BasePage - INFO : Sent keys to the element with LocatorType: classname and locatorValue: android.widget.EditText
+05/08/24 12:55:00 PM Monday - BasePage - INFO : Clicked on the element with LocatorType: text and locatorValue: SUBMIT
+05/08/24 12:55:09 PM Monday - BasePage - INFO : Clicked on the element with LocatorType: id and locatorValue: com.code2lead.kwad:id/ContactUs
+05/08/24 12:55:11 PM Monday - BasePage - INFO : Sent keys to the element with LocatorType: text and locatorValue: Enter Name
+05/08/24 12:55:31 PM Monday - BasePage - INFO : Could not on the element with LocatorType: text and locatorValue: Enter Name
+05/08/24 12:55:31 PM Monday - BasePage - INFO : Sent keys to the element with LocatorType: text and locatorValue: Enter Address
+05/08/24 12:55:32 PM Monday - BasePage - INFO : Sent keys to the element with LocatorType: text and locatorValue: Enter Mobile No
+05/08/24 12:55:53 PM Monday - BasePage - INFO : Could not on the element with LocatorType: id and locatorValue: text
+05/08/24 12:59:18 PM Monday - BasePage - INFO : Clicked on the element with LocatorType: id and locatorValue: com.code2lead.kwad:id/EnterValue
+05/08/24 12:59:20 PM Monday - BasePage - INFO : Sent keys to the element with LocatorType: classname and locatorValue: android.widget.EditText
+05/08/24 12:59:21 PM Monday - BasePage - INFO : Clicked on the element with LocatorType: text and locatorValue: SUBMIT
+05/08/24 12:59:29 PM Monday - BasePage - INFO : Clicked on the element with LocatorType: id and locatorValue: com.code2lead.kwad:id/ContactUs
+05/08/24 12:59:31 PM Monday - BasePage - INFO : Sent keys to the element with LocatorType: text and locatorValue: Enter Name
+05/08/24 12:59:32 PM Monday - BasePage - INFO : Sent keys to the element with LocatorType: text and locatorValue: Enter Email
+05/08/24 12:59:33 PM Monday - BasePage - INFO : Sent keys to the element with LocatorType: text and locatorValue: Enter Address
+05/08/24 12:59:34 PM Monday - BasePage - INFO : Sent keys to the element with LocatorType: text and locatorValue: Enter Mobile No
+05/08/24 12:59:35 PM Monday - BasePage - INFO : Clicked on the element with LocatorType: text and locatorValue: SUBMIT
