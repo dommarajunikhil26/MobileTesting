@@ -1,6 +1,6 @@
 import pytest
 import unittest
-
+import utils.CustomLogger as cl
 from pages.EnterSomeValuePage import EnterValue
 
 @pytest.mark.usefixtures("beforeClass", "beforeMethod")
@@ -8,14 +8,15 @@ class TestEnterSomeValuePage(unittest.TestCase):
 
     @pytest.fixture(autouse=True)
     def classObjects(self):
-        self.Esp = EnterValue(self.driver)
+        self.esp = EnterValue(self.driver)
 
     @pytest.mark.order(1)
-    def test_launchApp(self):
-        self.Esp.openEnterValuePage()
-        self.Esp.verifyIfPageDisplayed()
+    def test_openEnterValuePage(self):
+        cl.allureLogs("App is Launched")
+        self.esp.openEnterValuePage()
+        self.esp.verifyIfPageDisplayed()
     
     @pytest.mark.order(2)
     def test_enterValue(self):
-        self.Esp.enterValue()
-        self.Esp.clickSubmitButton()
+        self.esp.enterValue()
+        self.esp.clickSubmitButton()
