@@ -32,7 +32,16 @@ class BasePage:
             element = None
         return element
     
-    def click_element(self, locatorValue, locatorType="id",):
+    def get_element(self, locatorValue, locatorType="id"):
+        try:
+            locatorType = locatorType.lower()
+            element = self.waitForElement( locatorValue, locatorType)
+            self.log.info(f"Returning the element with LocatorType: {locatorType} and locatorValue: {locatorValue}")
+            return element
+        except:
+            self.log.info(f"Get Action could not be performed on the element with LocatorType: {locatorType} and locatorValue: {locatorValue}")
+    
+    def click_element(self, locatorValue, locatorType="id"):
         try:
             locatorType = locatorType.lower()
             element = self.waitForElement( locatorValue, locatorType)
