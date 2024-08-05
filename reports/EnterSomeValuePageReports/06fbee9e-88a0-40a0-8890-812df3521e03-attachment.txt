@@ -1,0 +1,2 @@
+[32mINFO    [0m BasePage:BasePage.py:49 Sent keys to the element with LocatorType: classname and locatorValue: android.widget.EditText
+[32mINFO    [0m BasePage:BasePage.py:40 Clicked on the element with LocatorType: text and locatorValue: SUBMIT

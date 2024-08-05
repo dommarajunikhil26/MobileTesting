@@ -1,5 +1,4 @@
-
-
+import utils.CustomLogger as cl
 from pages.BasePage import BasePage
 
 
@@ -9,19 +8,24 @@ class EnterValue(BasePage):
         super().__init__(driver)
         self.driver = driver
     
-    _enterValuePage = "com.code2lead.kwad:id/EnterValue", #id
-    _verifyIfPageDisplayed ="Enter some Value", # text
-    _enterValue = "android.widget.EditText", #classname
-    _submitBtn = "SUBMIT", # text
+    _enter_value_page = "com.code2lead.kwad:id/EnterValue" #id
+    _verify_if_page_displayed ="Enter some Value" # text
+    _enter_value = "android.widget.EditText" #classname
+    _submit_btn = "SUBMIT" # text
 
     def openEnterValuePage(self):
-        self.clickElement(self._enterValuePage, "id")
+        self.click_element(self._enter_value_page, "id")
+        cl.allureLogs("Clicked on Enter Some Value Page")
     
     def verifyIfPageDisplayed(self):
-        self.isElementDisplayed(self._verifyIfPageDisplayed, "text")
+        element = self.is_element_displayed(self._verify_if_page_displayed, "text")
+        assert element == True
+        cl.allureLogs("Page is verfied to be Enter Some Value Page")
     
     def enterValue(self):
-        self.sendKeys(25, self._enterValue, "classname")
+        self.send_keys(25, self._enter_value, "classname")
+        cl.allureLogs("Entered the number")
     
     def clickSubmitButton(self):
-        self.clickElement(self._submitBtn, "text")
+        self.click_element(self._submit_btn, "text")
+        cl.allureLogs("Clicked on submit button")

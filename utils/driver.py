@@ -4,7 +4,7 @@ from config.android_config import desired_capabilities as android_caps, appium_s
 
 class Driver:
     def get_driver(self):
-        driver = webdriver.Remote(android_url, UiAutomator2Options().load_capabilities(android_caps))
+        driver = webdriver.Remote(android_url, options= UiAutomator2Options().load_capabilities(android_caps))
         return driver
 
 

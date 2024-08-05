@@ -1,0 +1,2 @@
+[32mINFO    [0m BasePage:BasePage.py:51 Could not send keys to the element with LocatorType: classname and locatorValue: ('android.widget.EditText',)
+[32mINFO    [0m BasePage:BasePage.py:42 Click Action could not be performed on the element with LocatorType: text and locatorValue: ('SUBMIT',)

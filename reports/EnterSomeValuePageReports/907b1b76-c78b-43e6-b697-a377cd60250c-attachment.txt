@@ -1,0 +1,2 @@
+[32mINFO    [0m BasePage:BasePage.py:40 Clicked on the element with LocatorType: id and locatorValue: com.code2lead.kwad:id/EnterValue
+[32mINFO    [0m BasePage:BasePage.py:58 Element with LocatorType: text and locatorValue: Enter some Value is displayed

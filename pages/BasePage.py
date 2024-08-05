@@ -2,9 +2,10 @@ from os import wait
 from appium.webdriver.common.appiumby import AppiumBy
 from selenium.common.exceptions import ElementNotVisibleException, ElementNotSelectableException, NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-
+import utils.CustomLogger as cl
 
 class BasePage:
+    log = cl.customLogger()
 
     def __init__(self, driver):
         self.driver = driver
@@ -31,23 +32,25 @@ class BasePage:
             element = None
         return element
     
-    def clickElement(self, locatorValue, locatorType="id",):
+    def click_element(self, locatorValue, locatorType="id",):
         try:
             locatorType = locatorType.lower()
             element = self.waitForElement( locatorValue, locatorType)
             element.click()
+            self.log.info(f"Clicked on the element with LocatorType: {locatorType} and locatorValue: {locatorValue}")
         except:
-            print("error while clicking")
+            self.log.info(f"Click Action could not be performed on the element with LocatorType: {locatorType} and locatorValue: {locatorValue}")
     
-    def sendKeys(self, text,  locatorValue, locatorType="id"):
+    def send_keys(self, text,  locatorValue, locatorType="id"):
         try:
             locatorType = locatorType.lower()
             element = self.waitForElement(locatorValue, locatorType)
             element.send_keys(text)
+            self.log.info(f"Sent keys to the element with LocatorType: {locatorType} and locatorValue: {locatorValue}")
         except:
-            print("error while sending keys")
+            self.log.info(f"Could not on the element with LocatorType: {locatorType} and locatorValue: {locatorValue}")
     
-    def isElementDisplayed(self, locatorValue, locatorType="id"):
+    def is_element_displayed(self, locatorValue, locatorType="id"):
         try:
             locatorType = locatorType.lower()
             element = self.waitForElement(locatorValue, locatorType)
