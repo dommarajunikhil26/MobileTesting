@@ -14,13 +14,10 @@ class TestContactUsFormPage(unittest.TestCase):
     def test_openContactUsFormPage(self):
         cl.allureLogs("App Launched")
         self.cp.openContactFormPage()
-        self.cp.verifyContactFormPage()
+        self.assertTrue(self.cp.verifyContactFormPage(), "Contact Us Form Page not visible")
 
     @pytest.mark.order(4)
     def test_enterFormDetails(self):
         self.cp.enterFormDetailsAndSubmit()
-    
-    @pytest.mark.order(5)
-    def test_verifyRegistration(self):
-        self.cp.verifyRegistration()
+        self.assertTrue(self.cp.verifyRegistration(), "Registration not successful")
     

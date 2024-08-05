@@ -15,7 +15,7 @@ class ContactForm(BasePage):
     _enter_address = "Enter Address"    #text
     _enter_mobile_number = "Enter Mobile No"
     _submit_btn = "SUBMIT"  #text
-    _registration_success = "register Successfully!"    #text
+    _registration_success = '6'    #text
 
     def openContactFormPage(self):
         self.click_element(self._enter_contact_form_page, "id")
@@ -23,8 +23,8 @@ class ContactForm(BasePage):
     
     def verifyContactFormPage(self):
         element = self.is_element_displayed(self._verify_if_page_displayed, "text")
-        assert element == True
         cl.allureLogs("Verified the Contact Form Page")
+        return element
 
     def enterFormDetailsAndSubmit(self):
         self.send_keys("Admin", self._enter_name, "text")
@@ -34,4 +34,4 @@ class ContactForm(BasePage):
         self.click_element(self._submit_btn, "text")
         
     def verifyRegistration(self):
-        self.is_element_displayed(self._registration_success, "text")
+        self.is_element_displayed(self._registration_success, "index")

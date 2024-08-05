@@ -58,5 +58,5 @@ class BasePage:
             self.log.info(f"Element with locator type: {locatorType} and locatorValue: {locatorValue} is displayed")
             return True
         except:
-            self.log.info(f"Element with locator type: {locatorType} and locatorValue: {locatorValue} could not be displayed displayed")
+            self.log.info(f"Element with locator type: {locatorType} and locatorValue: {locatorValue} could not be displayed")
             return False
