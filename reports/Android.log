@@ -210,3 +210,5 @@ io.appium.uiautomator2.common.exceptions.UiSelectorSyntaxException: Could not pa
 05/08/24 06:41:07 PM Monday - TabActivity - INFO : Sports Fragment verified
 05/08/24 06:41:09 PM Monday - TabActivity - INFO : Element with locator type: text and locatorValue: HomeFragment is displayed
 05/08/24 06:41:09 PM Monday - TabActivity - INFO : Home Fragment verified
+05/08/24 07:19:18 PM Monday - BasePage - INFO : Element with locator type: text and locatorValue: ENTER YOUR PASSWORD could not be displayed
+05/08/24 07:19:52 PM Monday - BasePage - INFO : Element with locator type: text and locatorValue: ENTER YOUR PASSWORD could not be displayed

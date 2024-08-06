@@ -35,11 +35,5 @@ def pinch(driver, x, y):
     actions.w3c_actions.pointer_action.release()
     actions.perform()
 
-def long_press(driver, x, y):
-    actions = ActionChains(driver)
-    actions.w3c_actions = ActionBuilder(driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch"))
-    actions.w3c_actions.pointer_action.move_to_location(x, y)
-    actions.w3c_actions.pointer_action.pointer_down()
-    actions.w3c_actions.pause(2)  # pause for 2 seconds
-    actions.w3c_actions.pointer_action.release()
-    actions.perform()
+def long_press(driver, x, y, time):
+    driver.execute_script("mobile: longClickGesture", {"x": x, "y": y, "duration": time})

@@ -1,9 +1,5 @@
-
-
 import unittest
-
 import pytest
-
 from pages.TabActivityPage import TabActivity
 
 @pytest.mark.usefixtures("setUpClass", "setUpMethod")
